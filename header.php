@@ -1,0 +1,49 @@
+<!doctype html>
+<html <?php language_attributes(); ?> class="no-js">
+	<head>
+		<meta charset="<?php bloginfo('charset'); ?>">
+		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' : '; } ?><?php bloginfo('name'); ?></title>
+
+		<link href="//www.google-analytics.com" rel="dns-prefetch">
+        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/dlr-favicon.png">
+
+        <!-- Import Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
+
+		<!-- STYLES ARE ENQUED THROUGH FUNCTIONS.PHP -->
+
+		<?php wp_head(); ?>
+
+	</head>
+
+	<body <?php body_class(); ?>>
+
+		<header>
+            <!-- Logo -->
+            <h1><a href="index.html"><img src="<?php bloginfo('template_url') ?>/img/dlr-logo.png" alt="D.L. Rawlings Architecture + Planning" title="D.L. Rawlings Architecture + Planning" class="logo"></a></h1>
+
+            <button class="hamburger">&#9776;</button>
+            <button class="hamburger__close">&#735;</button>
+
+            <!-- Navigation Links -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog-index.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <ul class="desktop-nav">
+                <?php html5blank_nav(); ?>
+            </ul>
+
+        </header>
