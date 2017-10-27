@@ -26,7 +26,7 @@
 
 		<header>
             <!-- Logo -->
-            <h1><a href="index.html"><img src="<?php bloginfo('template_url') ?>/img/dlr-logo.png" alt="D.L. Rawlings Architecture + Planning" title="D.L. Rawlings Architecture + Planning" class="logo"></a></h1>
+            <h1><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url') ?>/img/dlr-logo.png" alt="D.L. Rawlings Architecture + Planning" title="D.L. Rawlings Architecture + Planning" class="logo"></a></h1>
 
             <button class="hamburger">&#9776;</button>
             <button class="hamburger__close">&#735;</button>
@@ -34,11 +34,7 @@
             <!-- Navigation Links -->
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog-index.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <?php html5blank_nav(); ?>
                 </ul>
             </nav>
 
